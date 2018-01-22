@@ -1,0 +1,159 @@
+
+/*
+ * © 2015 LOGIPAM services / www.logipam.com siges@logipam.com et contributeurs (voir www.logipam.com)
+ * 
+ * This file is part of SIGES.
+
+    SIGES is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License.
+
+    SIGES is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with SIGES.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ */
+
+
+
+
+
+
+
+
+/*html, body, div, span,*/
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+} 
+
+
+#logo
+{   
+	float: left;
+	//font-size: 100%;
+	overflow:hidden;
+    background:  url(images/logo.png) no-repeat left top;
+	background-size:100% 100%;
+	width:163px;
+	height:40px;
+ }
+
+
+
+
+
+.login { background: #F5F6F7;   
+        	}
+h1 { font-size: 20px; }
+.loginbox { background: #E5EAEF; padding: 7px; width: 300px; margin: 4% auto 0 auto; position: relative; 
+
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		behavior: url(/pie/PIE.htc); 
+		}
+			
+			
+.loginboxinner { 
+	background: #fff; padding: 20px; position: relative; 
+	
+}
+.loginheader { height: 40px; }
+.loginform { margin-top: 20px; }
+
+.loginbox h1 { font-size: 20px; letter-spacing: 1px; color: #555; font-weight: normal; padding-top: 2px; }
+.loginbox h2 { font-size: 11px; letter-spacing: 1px; color: #99a0a7; font-weight: normal; padding-top: 10px; float:right; }
+.loginbox .logo_log { position: absolute; top: 6px; right: 63px; }
+.logo_log img { height:auto; width:150px; }
+.loginbox p { margin: 10px 0 13px 0; }
+.loginbox label { display: block; color: #999FA7; letter-spacing: 1px; font-size: 13px;}
+
+.loginbox input  { 
+	 
+	font-family:  Helvetica, sans-serif; margin-top: 8px; font-size: 13px; border: 0; width: 240px; 
+	
+	padding: 7px 10px; background: #ECEDF2; color: #999999; border-bottom: 1px solid #539DC8; -webkit-box-shadow:1px solid #539DC8; -moz-box-shadow:1px solid #539DC8; 
+}
+.loginbox #password  { border: 0;
+	padding: 7px 10px; background: #ECEDF2; color: #999999; border-bottom: 1px solid #539DC8; -webkit-box-shadow:1px solid #539DC8; -moz-box-shadow:1px solid #539DC8;
+	
+}
+
+
+
+
+
+.loginbox button { 
+	background: #539DC8; padding: 9px 20px; font-size: 18px; border: 0; letter-spacing: 1px; color: #333; width: 260px;
+	-moz-box-shadow: 1px 1px 3px #222; -webkit-box-shadow: 1px 1px 3px #222; box-shadow: 1px 1px 3px #222; cursor: pointer;
+}
+.loginbox button.default { background: #999; color: #333; }
+.loginbox button.hover { background: #ccc; color: #000; }
+.loginbox button:active { background: #111; color: #fff; }
+.loginerror { color: #990000; background: #fbe3e3; padding: 0 10px; overflow: hidden; display: none; }
+.loginerror { -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; }
+.loginerror p { margin: 10px 0; }
+
+.version { font-family: 'BebasNeueRegular',Helvetica, sans-serif; text-align:center; padding: 0; }
+
+//.radius { -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+//.title { font-family: 'BebasNeueRegular',Helvetica, sans-serif; text-align:center; }
+
+ .radius_title input {background:  #539DC8; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; 
+        font-family: 'BebasNeueRegular',Helvetica, sans-serif; text-align:center; width: 100%; color: #FFF; font-weight: bold; letter-spacing: 1px; }
+
+
+.navbar-inverse .navbar-inner {
+    background-color: hsl(213, 26%, 92%);
+    background-repeat: repeat-x;
+    border-bottom: 2px solid hsl(17, 87%, 56%);
+    margin-left: -0px;
+    width: 100%;
+}
+
+
+
+.login_message { font-size: 24px; letter-spacing:0px; color: #F0642D; font-weight: normal; padding-top: 2px; text-align: center; }
+
+
+
+@media screen and (max-width: 430px) {
+	
+	body { font-size: 11px; }
+	button, input, select, textarea { font-size: 11px; }
+	h1 { font-size: 16px; }
+	.loginbox { width: auto; margin: 10px; }
+	.loginbox input { width: 95%; }
+	.loginbox button { width: 100%; }
+	.loginbox .logo_log { position: absolute; top: 10px; right: 20px; }
+	.logo_log img { height:auto; width:100px; }
+	.radius_title input{ width: 100%; }
+	.container-fluid{z-index: 1000000000; width: 100%}
+	
+	
+	#logo
+{   
+	float: left;
+	//font-size: 100%;
+	overflow:hidden;
+    background:  url(images/logo.png) no-repeat left top;
+	background-size:100% 100%;
+	width:100px;
+	height:26px;
+ }
+
+}	
+
+
+

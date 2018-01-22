@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 18, 2016, 3:28:25 PM
+    Author     : jcpoulard
+*/
+
+/*
+
+#header-fixed { 
+    position: fixed; 
+    top: 35px; 
+    display:none;
+    background-color:white;
+}
+
+tbody div{
+    overflow:scroll;
+    height:100px;
+}
+*/
+
+table.scroll {
+    /* width: 100%; /* Optional */
+    /* border-collapse: collapse; */
+    border-spacing: 2;
+    border: 0px solid black;
+}
+
+table.scroll tbody,
+table.scroll thead { display: block; }
+
+thead tr th { 
+    height: 30px;
+    line-height: 30px;
+    text-align: left; 
+}
+
+table.scroll tbody {
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+tbody { border-top: 0px solid black; }
+
+tbody td, thead th {
+    /* width: 20%; */ /* Optional */
+    border-right: 0px solid black;
+    /* white-space: nowrap; */
+}
+
+tbody td:last-child, thead th:last-child {
+    border-right: none;
+}
+
+#stat1{
+  height: 250px;
+}

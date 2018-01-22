@@ -1,0 +1,812 @@
+/*
+ * © 2015 LOGIPAM services / www.logipam.com siges@logipam.com et contributeurs (voir www.logipam.com)
+ *
+ * This file is part of SIGES.
+
+    SIGES is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License.
+
+    SIGES is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with SIGES.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1025px)
+{
+
+section{
+    padding-left:100px;
+    -moz-transition:all 200ms ease-out;
+    -webkit-transition:all 200ms ease-out;
+    -o-transition:all 200ms ease-out;
+    transition:all 200ms ease-out;
+    z-index: 11;
+
+ }
+
+section .navbar navbar-inverse navbar-fixed-top{
+    padding-left:-100px;
+
+
+}
+.navbar navbar-inverse navbar-fixed-top{
+    padding-left:-100px;
+   z-index: 11;
+
+}
+
+
+
+
+.span{
+    position:fixed;
+    top:0;
+    left:0;
+    width:195px;
+    height:100%;
+    margin:0 0 0 -200px;
+    -moz-transition:all 200ms ease-out;
+    -webkit-transition:all 200ms ease-out;
+    -o-transition:all 200ms ease-out;
+    transition:all 200ms ease-out;
+}
+
+.nav_side{
+	padding-top:35px;
+    position:fixed;
+    top:0px;
+    left:0;
+    width:195px;
+    height:100%;
+    margin:0 0 0 0px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+    text-transform:capitalize;
+   // background: #ECF0F5;
+    //border-right:2px solid #ECF0F5;
+
+   }
+
+.nav_side ul{
+    color: #F0652F;
+	margin: 0;
+    width:185px;
+    height:100%;
+    padding: 40px 0 0 9px;
+    list-style:none;
+    background: #ECF0F5;
+    overflow:hidden;
+    opacity: 0.98;
+    background: #ECF0F5;
+    border-right:2px solid #EF642E;
+}
+
+
+.nav_side li{
+    margin:0;
+    display: block;
+    clear:both;
+	width: 94%;
+    color: #F0652F;
+}
+
+
+.nav_side a{
+
+
+    color:#333;
+    font-size:1.05em;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    text-decoration:none;
+    display:block;
+    padding:5px 3px 3px 0px;
+    font-weight:300;
+    letter-spacing:1px;
+    border-bottom:1px solid #dfe7ef;
+    color: #333;
+}
+.nav_side a:hover{
+	text-decoration: none;
+    background: #F5F6F7;
+
+}
+.side_label label{
+    display:block;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    background: #EE6539;
+    border-radius: 5%;
+    line-height:22px;
+    color:#fff;
+    text-align:center;
+    font-size:1.8em;
+    line-height:0.7em;
+    position:fixed;
+    top:75px;
+    left:198px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+    z-index:500;
+    padding: 1px;
+}
+
+
+
+
+
+.side_label .icon-bar {
+
+
+    background-color: #ECEDF2;
+    border-radius: 1px;
+    margin: 3px;
+    //box-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.25);
+    display: block;
+    height: 2px;
+    width: 13px;
+}
+
+
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked ~ .nav_side{
+    margin:-200px;
+}
+input[type="checkbox"]:checked ~ .side_label label{
+    left: 3px;
+}
+
+input[type="checkbox"]:checked ~ section{
+    width: 100%
+}
+
+input[type="checkbox"]:checked ~ section{
+    -webkit-transform: translateX(-170px);
+    -moz-transform: translateX(-170px);
+    -o-transform: translateX(-170px);
+      transform: translateX(-170px);
+}
+
+/*
+
+
+
+input[type="checkbox"]:checked ~ section{
+    -webkit-transform: translateX(-170px);
+    -moz-transform: translateX(-170px);
+    -o-transform: translateX(-170px);
+      transform: translateX(-170px);
+}
+
+
+
+input[type="checkbox"]:checked ~ section{
+    -webkit-transform:translate3d(-100px, 0, 0);
+    -moz-transform:translate3d(-100px, 0, 0);
+    -o-transform:translate3d(-100px, 0, 0);
+    transform:translate3d(-100px, 0, 0);
+}
+
+
+
+
+*/
+
+
+input[type="checkbox"]:checked ~ section{
+    padding-left:120px;
+
+
+ }
+
+
+
+.checkbox_view input[type="checkbox"]{
+   display:inline;
+}
+
+
+
+
+/***************************** student_side ***************************/
+
+
+.student_side2 { display: none;}
+
+.student_side {
+				background: #E6F2F9;
+				padding-top:7px;
+				padding-left:5px;
+				margin-top:40px;
+				height:auto;
+				position: fixed;
+				right: 5px;
+				font-size: 1.3em;
+				font-family: Arial,sans-serif;
+				-moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid #E4E9EF;
+				}
+
+
+.student_side span:hover{
+				background: #edf5f9;
+				//width: 100%;
+				float: left;
+				left: 0;
+				}
+
+
+
+
+}
+
+/***************************************************************************************************/
+
+.student{
+
+	color: #1E5B8C;
+ 	font-size: 16px;
+	float: left;
+    font-weight: bold;
+    margin: 5px 20px;
+
+     }
+
+.student1{
+
+	color: #fff;
+ 	font-size: 0px;
+	float: left;
+    font-weight: bold;
+    margin: 5px 20px;
+
+     }
+
+
+
+
+
+
+
+
+/***************************************** small screnn *********************************/
+
+
+@media screen and (max-width: 1024px)
+{
+
+
+section{
+    padding-left:0px;
+    -moz-transition:all 200ms ease-out;
+    -webkit-transition:all 200ms ease-out;
+    -o-transition:all 200ms ease-out;
+    transition:all 200ms ease-out;
+     width: 100%;
+     z-index: -111;
+ }
+
+section .navbar navbar-inverse navbar-fixed-top{
+    padding-left:0px;
+
+
+}
+
+
+
+
+.navbar navbar-inverse navbar-fixed-top{
+    padding-left:-100px;
+   z-index: 333;
+
+}
+
+
+
+.navbar{  z-index: 333;}
+
+section .container-fluid, section .main-body, .container-fluid, row-fluid { z-index: -3;}
+.side_label label{display: none;}
+
+.span{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:195px;
+    height:100%;
+    margin:0 0 0 -200px;
+    -moz-transition:all 200ms ease-out;
+    -webkit-transition:all 200ms ease-out;
+    -o-transition:all 200ms ease-out;
+    transition:all 200ms ease-out;
+}
+
+.nav_side{
+	padding-top:30px;
+    position:fixed;
+    top:0px;
+    left:-200px;
+    width:195px;
+    height:100%;
+    margin:0 0 0 0px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+    text-transform:capitalize;
+    //background: #EE6539;
+    border-right:2px solid #ECF0F5;
+    color: #F0652F;
+ 	//z-index: -1;
+
+   }
+
+
+
+
+
+.nav_side ul{
+	margin: 0;
+    width:185px;
+    height:100%;
+    padding: 40px 0 0 9px;
+    list-style:none;
+    background: #ECF0F5;
+    overflow:hidden;
+    opacity: 0.98;
+    color: #F0652F;
+    background: #ECF0F5;
+    border-right:2px solid #EF642E;
+
+
+}
+
+
+
+.nav_side li{
+    margin:0;
+    display: block;
+    clear:both;
+	width: 94%;
+    color: #F0652F;
+}
+
+
+
+
+
+.nav_side a{
+    color: #333;
+    font-size:1.05em;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    text-decoration:none;
+    display:block;
+    padding:5px 3px 3px 0px;
+    font-weight:300;
+    letter-spacing:1px;
+    clear:both;
+    border-bottom:1px solid #EBEBEB;
+}
+.nav_side a:hover{
+	text-decoration: none;
+    background: #F5F6F7;
+}
+.side_label label{
+    display:block;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    background: #EE6539;
+    border-radius: 5%;
+    line-height:22px;
+    color:#fff;
+    text-align:center;
+    font-size:1.8em;
+    line-height:0.7em;
+    position:fixed;
+    top:70px;
+    left:10px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+    padding: 1px;
+}
+
+
+
+
+
+.side_label .icon-bar {
+
+
+    background-color: #ECEDF2;
+    border-radius: 1px;
+    margin: 3px;
+    //box-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.25);
+    display: block;
+    height: 2px;
+    width: 13px;
+}
+
+
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked ~ .nav_side{
+    margin: 10px 200px 0;
+
+}
+input[type="checkbox"]:checked ~ .side_label label{
+    left: 200px;
+}
+
+input[type="checkbox"]:checked ~ section{
+    width: 100%
+
+}
+
+input[type="checkbox"]:checked ~ section{
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -o-transform: translateX(0px);
+      transform: translateX(0px);
+
+}
+
+
+input[type="checkbox"]:checked ~ section{
+    padding-left:200px;
+
+
+ }
+
+
+
+.checkbox_view input[type="checkbox"]{
+   display:inline;
+}
+
+
+
+/***************************** student_side ***************************/
+
+
+.student_side {
+				background: #ECF0F5;
+				padding-top:10px;
+				padding-left:5px;
+				margin-top:45px;
+				border:0px solid red;
+				height:auto;
+				position: fixed;
+				right: 5px;
+				}
+
+.student_side2 {none;
+
+
+
+}
+
+
+
+
+/*****************************************  *********************************/
+
+
+@media screen and (min-width: 769px)
+{
+
+
+.student_side2{
+
+	display: none;
+     }
+
+
+ section{z-index: -1111;}
+
+.CDetailView_photo{
+
+				margin-top: 5px;
+                clear: both;
+				}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************  *********************************/
+
+
+@media screen and (max-width: 768px)
+{
+
+.nav_side li{
+    margin:0;
+    display: block;
+    clear:both;
+	width: 94%;
+    color: #F0652F;
+}
+
+.student1{
+
+	color: #1E5B8C;
+ 	font-size: 16px;
+	float: left;
+    font-weight: bold;
+    margin: 5px 20px;
+
+     }
+
+.student{
+
+	display: none;
+
+     }
+
+#dash a{
+
+    color: #F0652F;
+    font-size: 1.1em;
+	font-family: "Helvetica", Arial, Serif;
+    font-weight: bold;
+
+	}
+
+
+
+
+/***************************** student_side ***************************/
+
+
+.student_side { display: none;}
+
+#a_academic{display: none;}
+.fc-button-today{display: none;}
+
+
+.photo_view{
+           margin: 0px auto;
+           display: block;
+           margin: 100px auto;
+
+
+           }
+
+.student_side2 {
+				background: #ECF0F5;
+				padding:10px 0;
+				height:auto;
+				position: relative;
+                margin:15px;
+                clear: both;
+    			width: 80%;
+                display: block;
+                text-align: left;
+                border-bottom: 1px solid #ccc;
+				}
+
+
+.CDetailView_photo{
+
+				margin-top: 5px;
+                clear: both;
+				}
+
+.box2-body .labels{
+	//padding: 15px;
+	width: 50%;
+    display: block;
+    margin: 10px auto;
+
+}
+.box2-body canvas {
+         width: 65%;
+		 display: block;
+         margin-left: auto;
+         margin-right: auto
+      }
+
+
+
+nav {
+    z-index: 1;
+}
+
+.side_label {
+    z-index: 1;
+}
+
+
+
+}
+
+
+
+/********************************* screen 600px *****************************************/
+
+
+@media screen and (max-width: 600px)
+{
+
+
+
+div.form input,
+div.form textarea,
+div.form select,
+td.input
+{
+	//margin: 0.2em 0.5em;
+	margin: 0 1%;
+	display: block;
+	width: auto;
+    padding: auto;
+    float: both;
+   }
+
+.nav_side li{
+    margin:0;
+    display: block;
+    clear:both;
+	width: 94%;
+    color: #F0652F;
+}
+
+.nav_side{ z-index: 1111;}
+
+.responstable{min-width: 200px; margin: 2px;
+
+}
+
+
+div.form btn,
+div.form button,
+.btn,
+.btn-secondary,
+btn btn-warning{  margin: 10px; display: inline-block; }
+
+
+
+
+div.form button,
+.select2-container .select2-choice
+{
+	//margin: 0.2em 0.5em;
+	margin: 0 1%;
+	display: block;
+	width: auto;
+    max-width: 80%;
+
+}
+
+
+
+
+input.btn-block[type="submit"], input.btn-block[type="reset"], input.btn-block[type="button"] {
+
+}
+btn, .btn-primary.active, .btn-warning.active, .btn-danger.active, .btn-success.active, .btn-info.active, .btn-inverse.active {
+
+}
+
+
+
+#persons-grid .summary, pager { display: none;}
+#reportCard .summary { display: none;}
+.pager { color: #fff;isplay: none;}
+
+
+
+
+/**
+=====================================
+=====================================
+
+for responsive tables
+
+**/
+
+
+.grid-view,.table-responsive
+{
+	width: 100%;
+	overflow-y: auto;
+	_overflow: auto;
+	margin: 0 0 1em;
+
+}
+
+.grid-view::-webkit-scrollbar
+{
+	-webkit-appearance: none;
+	width: 14px;
+	height: 14px;
+}
+
+.table-responsive::-webkit-scrollbar
+{
+	-webkit-appearance: none;
+	width: 14px;
+	height: 14px;
+}
+
+
+.table-responsive::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	border: 3px solid #fff;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.grid-view::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	border: 3px solid #fff;
+	background-color: rgba(0, 0, 0, .3);
+}
+.grid-view .button-column {
+display: none;
+float: none;
+
+}
+.table-responsive .button-column {
+display: none;
+float: none;
+
+}
+
+
+
+
+
+
+
+#myModal, .modal-dialog{ z-index:-1;}
+
+nav{z-index:1;}
+
+
+
+.row-fluid h5{
+
+color: #1e5c8c;
+font-size: 12px;
+display: block;
+white-space: normal;
+text-align:left;
+	}
+
+
+}
