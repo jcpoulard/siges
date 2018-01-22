@@ -30,7 +30,7 @@
 return array(
     'connectionString' => 'mysql:host=localhost;dbname=siges_demo',
     'emulatePrepare' => true,
-    'username' => 'siges_demo',
-    'password' => 'Demo007#',
+    'username' => 'root',
+    'password' => 'root',
     'charset' => 'utf8',
 );
